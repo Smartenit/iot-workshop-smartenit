@@ -1,0 +1,444 @@
+{
+  "parse": {
+    "0x00": {
+      "name": "E_ZCL_NULL"
+    },
+    "0x08": {
+      "name": "E_ZCL_GINT8",
+      "bytes": 1,
+      "parser": "signed_integer"
+    },
+    "0x09": {
+      "name": "E_ZCL_GINT16",
+      "bytes": 2,
+      "parser": "signed_integer"
+    },
+    "0x0a": {
+      "name": "E_ZCL_GINT24",
+      "bytes": 3,
+      "parser": "signed_integer"
+    },
+    "0x0b": {
+      "name": "E_ZCL_GINT32",
+      "bytes": 4,
+      "parser": "signed_integer"
+    },
+    "0x0c": {
+      "name": "E_ZCL_GINT40",
+      "bytes": 5,
+      "parser": "signed_integer"
+    },
+    "0x0d": {
+      "name": "E_ZCL_GINT48",
+      "bytes": 6,
+      "parser": "signed_integer"      
+    },
+    "0x0e": {
+      "name": "E_ZCL_GINT56",
+      "bytes": 7,
+      "parser": "signed_integer"
+    },
+    "0x0f": {
+      "name": "E_ZCL_GINT64",
+      "bytes": 8,
+      "parser": "signed_integer"
+    },
+    "0x10": {
+      "name": "E_ZCL_BOOL",
+      "bytes": 1,
+      "parser": "boolean"
+    },
+    "0x18": {
+      "name": "E_ZCL_BMAP8",
+      "bytes": 1,
+      "parser": "bitmap"
+    },
+    "0x19": {
+      "name": "E_ZCL_BMAP16",
+      "bytes": 2,
+      "parser": "bitmap"
+    },
+    "0x1a": {
+      "name": "E_ZCL_BMAP24",
+      "bytes": 3,
+      "parser": "bitmap"
+    },
+    "0x1b": {
+      "name": "E_ZCL_BMAP32",
+      "bytes": 4,
+      "parser": "bitmap"
+    },
+    "0x1c": {
+      "name": "E_ZCL_BMAP40",
+      "bytes": 5,
+      "parser": "bitmap"
+    },
+    "0x1d": {
+      "name": "E_ZCL_BMAP48",
+      "bytes": 6,
+      "parser": "bitmap"
+    },
+    "0x1e": {
+      "name": "E_ZCL_BMAP56",
+      "bytes": 7,
+      "parser": "bitmap"
+    },
+    "0x1f": {
+      "name": "E_ZCL_BMAP64",
+      "bytes": 8,
+      "parser": "bitmap"
+    },
+    "0x20": {
+      "name": "E_ZCL_UINT8",
+      "bytes": 1,
+      "parser": "unsigned_integer"
+    },
+    "0x21": {
+      "name": "E_ZCL_UINT16",
+      "bytes": 2,
+      "parser": "unsigned_integer"
+    },
+    "0x22": {
+      "name": "E_ZCL_UINT24",
+      "bytes": 3,
+      "parser": "unsigned_integer"
+    },
+    "0x23": {
+      "name": "E_ZCL_UINT32",
+      "bytes": 4,
+      "parser": "unsigned_integer"
+    },
+    "0x24": {
+      "name": "E_ZCL_UINT40",
+      "bytes": 5,
+      "parser": "unsigned_integer"
+    },
+    "0x25": {
+      "name": "E_ZCL_UINT48",
+      "bytes": 6,
+      "parser": "unsigned_integer"
+    },
+    "0x26": {
+      "name": "E_ZCL_UINT56",
+      "bytes": 7,
+      "parser": "unsigned_integer"
+    },
+    "0x27": {
+      "name": "E_ZCL_UINT64",
+      "bytes": 8,
+      "parser": "unsigned_integer"
+    },
+    "0x28": {
+      "name": "E_ZCL_INT8",
+      "bytes": 1,
+      "parser": "signed_integer"
+    },
+    "0x29": {
+      "name": "E_ZCL_INT16",
+      "bytes": 2,
+      "parser": "signed_integer"
+    },
+    "0x2a": {
+      "name": "E_ZCL_INT24",
+      "bytes": 3,
+      "parser": "signed_integer"
+    },
+    "0x2b": {
+      "name": "E_ZCL_INT32",
+      "bytes": 4,
+      "parser": "signed_integer"
+    },
+    "0x2c": {
+      "name": "E_ZCL_INT40",
+      "bytes": 5,
+      "parser": "signed_integer"
+    },
+    "0x2d": {
+      "name": "E_ZCL_INT48",
+      "bytes": 6,
+      "parser": "signed_integer"
+    },
+    "0x2e": {
+      "name": "E_ZCL_INT56",
+      "bytes": 7,
+      "parser": "signed_integer"
+    },
+    "0x2f": {
+      "name": "E_ZCL_INT64",
+      "bytes": 8,
+      "parser": "signed_integer"
+    },
+    "0x30": {
+      "name": "E_ZCL_ENUM8"
+    },
+    "0x31": {
+      "name": "E_ZCL_ENUM16"
+    },
+    "0x38": {
+      "name": "E_ZCL_FLOAT_SEMI"
+    },
+    "0x39": {
+      "name": "E_ZCL_FLOAT_SINGLE"
+    },
+    "0x3a": {
+      "name": "E_ZCL_FLOAT_DOUBLE"
+    },
+    "0x41": {
+      "name": "E_ZCL_OSTRING"
+    },
+    "0x42": {
+      "name": "E_ZCL_CSTRING"
+    },
+    "0x43": {
+      "name": "E_ZCL_LOSTRING"
+    },
+    "0x44": {
+      "name": "E_ZCL_LCSTRING"
+    },
+    "0x48": {
+      "name": "E_ZCL_ARRAY"
+    },
+    "0x49": {
+      "name": "E_ZCL_ARRAY_UINT16"
+    },
+    "0x4a": {
+      "name": "E_ZCL_ARRAY_ZONE_STRUCT"
+    },
+    "0x4b": {
+      "name": "E_ZCL_ARRAY_UINT24"
+    },
+    "0x4c": {
+      "name": "E_ZCL_STRUCT"
+    },
+    "0x50": {
+      "name": "E_ZCL_SET"
+    },
+    "0x51": {
+      "name": "E_ZCL_BAG"
+    },
+    "0x8F": {
+      "name": "E_ZCL_ARRAY_UINT8"
+    },
+    "0x90": {
+      "name": "E_ZCL_ARRAY_STRUCT_UINT8_MAP16"
+    },
+    "0xe0": {
+      "name": "E_ZCL_TOD"
+    },
+    "0xe1": {
+      "name": "E_ZCL_DATE"
+    },
+    "0xe2": {
+      "name": "E_ZCL_UTCT"
+    },
+    "0xe8": {
+      "name": "E_ZCL_CLUSTER_ID"
+    },
+    "0xe9": {
+      "name": "E_ZCL_ATTRIBUTE_ID"
+    },
+    "0xea": {
+      "name": "E_ZCL_BACNET_OID"
+    },
+    "0xf0": {
+      "name": "E_ZCL_IEEE_ADDR"
+    },
+    "0xf1": {
+      "name": "E_ZCL_KEY_128"
+    },
+    "0xfe": {
+      "name": "E_ZCL_SIGNATURE"
+    },
+    "0xff": {
+      "name": "E_ZCL_UNKNOWN"
+    }
+  },
+  "serialize": {
+    "E_ZCL_NULL": {
+      "code": "0x00"
+    },
+    "E_ZCL_GINT8": {
+      "code": "0x08"
+    },
+    "E_ZCL_GINT16": {
+      "code": "0x09"
+    },
+    "E_ZCL_GINT24": {
+      "code": "0x0a"
+    },
+    "E_ZCL_GINT32": {
+      "code": "0x0b"
+    },
+    "E_ZCL_GINT40": {
+      "code": "0x0c"
+    },
+    "E_ZCL_GINT48": {
+      "code": "0x0d"
+    },
+    "E_ZCL_GINT56": {
+      "code": "0x0e"
+    },
+    "E_ZCL_GINT64": {
+      "code": "0x0f"
+    },
+    "E_ZCL_BOOL": {
+      "code": "0x10"
+    },
+    "E_ZCL_BMAP8": {
+      "code": "0x18"
+    },
+    "E_ZCL_BMAP16": {
+      "code": "0x19"
+    },
+    "E_ZCL_BMAP24": {
+      "code": "0x1a"
+    },
+    "E_ZCL_BMAP32": {
+      "code": "0x1b"
+    },
+    "E_ZCL_BMAP40": {
+      "code": "0x1c"
+    },
+    "E_ZCL_BMAP48": {
+      "code": "0x1d"
+    },
+    "E_ZCL_BMAP56": {
+      "code": "0x1e"
+    },
+    "E_ZCL_BMAP64": {
+      "code": "0x1f"
+    },
+    "E_ZCL_UINT8": {
+      "code": "0x20"
+    },
+    "E_ZCL_UINT16": {
+      "code": "0x21"
+    },
+    "E_ZCL_UINT24": {
+      "code": "0x22"
+    },
+    "E_ZCL_UINT32": {
+      "code": "0x23"
+    },
+    "E_ZCL_UINT40": {
+      "code": "0x24"
+    },
+    "E_ZCL_UINT48": {
+      "code": "0x25"
+    },
+    "E_ZCL_UINT56": {
+      "code": "0x26"
+    },
+    "E_ZCL_UINT64": {
+      "code": "0x27"
+    },
+    "E_ZCL_INT8": {
+      "code": "0x28"
+    },
+    "E_ZCL_INT16": {
+      "code": "0x29"
+    },
+    "E_ZCL_INT24": {
+      "code": "0x2a"
+    },
+    "E_ZCL_INT32": {
+      "code": "0x2b"
+    },
+    "E_ZCL_INT40": {
+      "code": "0x2c"
+    },
+    "E_ZCL_INT48": {
+      "code": "0x2d"
+    },
+    "E_ZCL_INT56": {
+      "code": "0x2e"
+    },
+    "E_ZCL_INT64": {
+      "code": "0x2f"
+    },
+    "E_ZCL_ENUM8": {
+      "code": "0x30"
+    },
+    "E_ZCL_ENUM16": {
+      "code": "0x31"
+    },
+    "E_ZCL_FLOAT_SEMI": {
+      "code": "0x38"
+    },
+    "E_ZCL_FLOAT_SINGLE": {
+      "code": "0x39"
+    },
+    "E_ZCL_FLOAT_DOUBLE": {
+      "code": "0x3a"
+    },
+    "E_ZCL_OSTRING": {
+      "code": "0x41"
+    },
+    "E_ZCL_CSTRING": {
+      "code": "0x42"
+    },
+    "E_ZCL_LOSTRING": {
+      "code": "0x43"
+    },
+    "E_ZCL_LCSTRING": {
+      "code": "0x44"
+    },
+    "E_ZCL_ARRAY": {
+      "code": "0x48"
+    },
+    "E_ZCL_ARRAY_UINT16": {
+      "code": "0x49"
+    },
+    "E_ZCL_ARRAY_ZONE_STRUCT": {
+      "code": "0x4a"
+    },
+    "E_ZCL_ARRAY_UINT24": {
+      "code": "0x4b"
+    },
+    "E_ZCL_STRUCT": {
+      "code": "0x4c"
+    },
+    "E_ZCL_SET": {
+      "code": "0x50"
+    },
+    "E_ZCL_BAG": {
+      "code": "0x51"
+    },
+    "E_ZCL_ARRAY_UINT8": {
+      "code": "0x8F"
+    },
+    "E_ZCL_ARRAY_STRUCT_UINT8_MAP16": {
+      "code": "0x90"
+    },
+    "E_ZCL_TOD": {
+      "code": "0xe0"
+    },
+    "E_ZCL_DATE": {
+      "code": "0xe1"
+    },
+    "E_ZCL_UTCT": {
+      "code": "0xe2"
+    },
+    "E_ZCL_CLUSTER_ID": {
+      "code": "0xe8"
+    },
+    "E_ZCL_ATTRIBUTE_ID": {
+      "code": "0xe9"
+    },
+    "E_ZCL_BACNET_OID": {
+      "code": "0xea"
+    },
+    "E_ZCL_IEEE_ADDR": {
+      "code": "0xf0"
+    },
+    "E_ZCL_KEY_128": {
+      "code": "0xf1"
+    },
+    "E_ZCL_SIGNATURE": {
+      "code": "0xfe"
+    },
+    "E_ZCL_UNKNOWN": {
+      "code": "0xff"
+    }
+  }
+}
