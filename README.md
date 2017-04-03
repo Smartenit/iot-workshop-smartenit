@@ -3,12 +3,12 @@
 Making your world smarter and greener
 # World of Smartenit IoT Workshop
 
-This repository is a **[Smartenit Inc.][smt-site]** workshop to get you involved in the world of the IoT company services. Please enjoy it!
+This repository is a **[Smartenit Inc.][smt-site]** workshop to get you started in the world of the IoT company services. Please enjoy!
 *Copyright Compacta International, Ltd 2017. All rights reserved*
 
-This workshop is part of a series of workshops which we want to introduce you to our robust ecosystem! [Smartenit Ecosystem Documentation](https://docs.smartenit.io/)
+This workshop is one in a series of workshops we will use to introduce you to our robust ecosystem! [Smartenit Ecosystem Documentation](https://docs.smartenit.io/)
 
-This workshop is focused in the part of the Zigbee network and the usage of the **Smartenit** Zigbee controllers using the [Serial API](docs/ZBPCID_API.pdf) (a.k.a Serapi). We will use a USB Zigbee Coordinator and a Zigbee device with OnOff Cluster support to control it and read its attributes.
+This workshop is focused on the Zigbee network and the usage of the **Smartenit** Zigbee controllers using the [Serial API](docs/ZBPCID_API.pdf) (a.k.a Serapi). We will use a USB Zigbee Coordinator and a Zigbee device with OnOff Cluster support to control it and read its attributes.
 
 1. This workshop is written in python language, please follow the instructions bellow based on your Operating System. Please install Python version **2.7**
 
@@ -29,7 +29,7 @@ This workshop is focused in the part of the Zigbee network and the usage of the 
     `git clone https://github.com/Smartenit/iot-workshop-smartenit.git`
  
     Optionally, you can download the repository as a ZIP file at the  `Downloads` menu.
-In case you are interested in making a contribution for this workshop, follow the instructions in [contributions guidelines](#contributions-guidelines)
+If you are interested in making a contribution for this workshop, follow the instructions in [contributions guidelines](#contributions-guidelines)
 
 3. Once you are done cloning or downloading the repository, change your current path to the workshop folder, there you will be able to install the repository requirements using the Python package installer `pip`. In case you need to install this tool please visit [Installing pip][pip-installing]:
 
@@ -49,7 +49,7 @@ In case you are interested in making a contribution for this workshop, follow th
     
     Follow this guide [How to install TKInter][tkinter-install]
 
-5. Finally run our checker script which actually does not do anything but trying to import the dependencies and will let you know if all dependencies are met.
+5. Finally run our checker script which actually does not do anything but will import the dependencies and will let you know if all dependencies are met.
 
     `python check.py`
 
@@ -60,23 +60,23 @@ Smartenit Coordinator allows you to turn any controller with a USB port such as 
 
 ![](fig/radios.jpg?raw=true)
 
-In this workshop we are assuming you are using your PC, but you can use whatever you want!
+In this workshop we are assuming you are using your PC, but feel free to use what you would like!
 
 The coordinator is part of the Zigbee network, so our first challenge for you is to request the USB dongle MAC!
 
-You don't even know where to start?
+Don't know where to start?
 Identify the request you should use to read the coordinator MAC in our [Serapi document](docs/ZBPCID_API.pdf).
 
-You got this? Ok, now identify how to execute that request using the python library to get the Zigbee MAC of the coordinator. [Use the Python SDK documentation](serapi/README.md)
+Got it? Ok, now identify how to execute that request using the python library to get the Zigbee MAC of the coordinator. [Use the Python SDK documentation](serapi/README.md)
 
 ## Reading the short address for the given device
-Most of the requests to devices in the Zigbee network requires the short address identifier which identifies each device in the network with its MAC. You already have a basic Zigbee network, don't you? So let's get the short address of the device in your network!
+Most of the requests to devices in the Zigbee network require the short address identifier which identifies each device in the network with its MAC. You already have a basic Zigbee network, don't you? So let's get the short address of the device in your network!
 
 *Tip:* Look at the device and get its MAC Address.
 
 *Tip:* Unpowered devices are unreachable, getting their short address is not possible.
 
-*Tip:* You do not have a Zigbee network yet? Let's try an open join request!
+*Tip:* Don't have a Zigbee network yet? Try an open join request!
 
 ## Sending a Cluster Command to the given device
 Once you know the short address of your device, let's implement a simple interface where you can send ON and OFF commands to the device!
