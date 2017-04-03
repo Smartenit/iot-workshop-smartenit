@@ -48,7 +48,7 @@ class InputHandler(object):
       'fwVersion': payload[2],
       'profile': self.list_to_number(payload[3:5]),
       'shortAddress': self.list_to_number(payload[5:7]),
-      'ieeeAddress': payload[6:]
+      'ieeeAddress': payload[7:]
     }
     return rsp
 
