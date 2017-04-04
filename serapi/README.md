@@ -3,14 +3,14 @@
 Making your world smarter and greener
 # Python Serapi SDK
 
-This repository is an **[Smartenit Inc.][smt-site]** workshop to get involved in the world of the IoT company services. Please enjoy it!
+This repository is an **[Smartenit Inc.][smt-site]** workshop to get you started in the world of IoT company services. Please enjoy!
 *Copyright Compacta International, Ltd 2017. All rights reserved*
 
 ## About this SDK
 For simplicity, this SDK considers all requests asynchronous, so you will receive responses and reports asynchronously in a single callback. If you send a request which expects response, you will receive that message in that same callback.
 
 ## Getting messages
-To process the messages coming from the coordinator using the Python SDK, set a handler for the received data as follow:
+To process the messages coming from the coordinator using the Python SDK, set a handler for the received data as follows:
 ```python
 import time
 from serapi import serapi
